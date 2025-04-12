@@ -13,10 +13,13 @@ function App() {
         🚀 Tailwind is working!
       </h1>
     </div>
-    <div className="min-h-screen bg-base-200 flex items-center justify-center">
-      <button className="btn btn-primary text-lg">
-        🚀 Testing Daisy UI
-      </button>
+    <div data-theme="synthwave">
+      <div className="min-h-screen bg-base-100 flex flex-col items-center justify-center gap-6">
+        <h1 className="text-3xl font-bold text-primary">💸 Finance Tracker</h1>
+
+        <button className="btn btn-primary">Add Transaction</button>
+        <button className="btn btn-secondary">View Reports</button>
+      </div>
     </div>
         
     </>
