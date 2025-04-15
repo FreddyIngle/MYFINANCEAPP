@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import SpendingChart from './components/SpendingChart';
 import './App.css'
 
 function App() {
@@ -41,21 +40,21 @@ function App() {
     </div>
     {/*CARD WRAPPER */}
     <div className="flex flex-wrap justify-center gap-6 p-4">
-      {/* CARD 1*/}
+
+      {/* CARD 1 - Pie Chart*/}
       <div className="card bg-base-100 w-96 shadow-sm">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-      </figure>
+          {/*<div className="bg-white p-4 rounded-lg shadow">*/}
+            <SpendingChart />
+          {/*</div>*/}
       <div className="card-body">
-        <h2 className="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+        <h2 className="card-title">Monthly Spending Trends</h2>
+       
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary">Details</button>
         </div>
       </div>
     </div>
+
     {/*CARD 2*/}
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure>
