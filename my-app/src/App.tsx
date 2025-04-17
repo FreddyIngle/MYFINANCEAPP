@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SpendingChart from './components/SpendingChart';
 import './App.css'
 import StockTracker from './components/StockTracker';
+import Signup from './components/Signup';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,10 +12,20 @@ function App() {
   <div className="wrapper min-h-screen bg-base-200">
     {/* Navbar */}
     <div className="navbar bg-base-100 shadow-sm">
+
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">Finance Tracker</a>
+       
       </div>
+
+    
+      
+
       <div className="flex gap-2">
+          <label htmlFor="signup-modal" className='btn btn-md btn-accent text-sm'>
+            Sign up
+          </label>
+          < Signup />
         <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
@@ -79,13 +90,9 @@ function App() {
     </div>
   </div>
     
-    
-
-   
-
   </div>
 
-    
+  
         
     </>
   )
